@@ -61,7 +61,7 @@ public class Steps {
 //	    System.out.println("user opts to register");
 	}
 	@When("user enters details required")
-	public void user_enters_details_required(io.cucumber.datatable.DataTable dataTable) {
+	public void user_enters_details_required() {
 	    // Write code here that turns the phrase above into concrete actions
 	    // For automatic transformation, change DataTable to one of
 	    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
@@ -69,12 +69,6 @@ public class Steps {
 	    // Double, Byte, Short, Long, BigInteger or BigDecimal.
 	    //
 	    // For other transformations you can register a DataTableType.
-		
-		List<List<String>> lstprods = dataTable.asLists();
-		for (List<String> prod : lstprods) {
-			System.out.println(prod.get(0)+" "+prod.get(1)+" "+prod.get(2)+" "+prod.get(3));
-			
-		}
 
 //		driver.findElement(By.name("email_id")).sendKeys("veda5@domain.com");
 //		driver.findElement(By.name("pwd")).sendKeys("password");
